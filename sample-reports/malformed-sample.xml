@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample intentionally malformed JUnit XML for testing error boundary handling -->
+<testsuite name="BrokenSuite" tests="2">
+    <testcase classname="com.runlens.Broken" name="test_unclosed" time="0.10">
+        <failure message="Something failed"
+</testsuite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="RunLens-Build-104" time="4.60">
+    <testsuite name="AuthSuite" tests="2" failures="1" errors="0" skipped="0" time="1.12">
+        <testcase classname="com.runlens.Auth" name="test_login_credentials" time="0.39" />
+        <testcase classname="com.runlens.Auth" name="test_session_expiry" time="0.73">
+            <failure message="Session token remained active after TTL" type="AssertionError">Expected session to expire at 3600s.</failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="PaymentSuite" tests="2" failures="0" errors="1" skipped="0" time="2.30">
+        <testcase classname="com.runlens.Payments" name="test_stripe_webhook" time="1.42">
+            <error message="Webhook signing secret endpoint timed out" type="TimeoutException">Socket timeout after 1500ms</error>
+        </testcase>
+        <testcase classname="com.runlens.Payments" name="test_charge_idempotency" time="0.88" />
+    </testsuite>
+    <testsuite name="SearchSuite" tests="2" failures="0" errors="0" skipped="0" time="1.18">
+        <testcase classname="com.runlens.Search" name="test_query_indexing" time="0.56" />
+        <testcase classname="com.runlens.Search" name="test_fuzzy_match" time="0.62" />
+    </testsuite>
+</testsuites>

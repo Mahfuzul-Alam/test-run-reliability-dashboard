@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderSuite" tests="4" failures="0" errors="0" skipped="0" time="2.80">
+    <testcase classname="com.runlens.Payments" name="test_charge_idempotency" time="0.75" />
+    <testcase classname="com.runlens.Payments" name="test_stripe_webhook" time="0.85" />
+    <testcase classname="com.runlens.Auth" name="test_login_credentials" time="0.45" />
+    <testcase classname="com.runlens.Search" name="test_query_indexing" time="0.75" />
+</testsuite>

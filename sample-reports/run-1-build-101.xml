@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="RunLens-Build-101" time="4.15">
+    <testsuite name="AuthSuite" tests="2" failures="0" errors="0" skipped="0" time="1.10">
+        <testcase classname="com.runlens.Auth" name="test_login_credentials" time="0.42" />
+        <testcase classname="com.runlens.Auth" name="test_session_expiry" time="0.68" />
+    </testsuite>
+    <testsuite name="PaymentSuite" tests="2" failures="0" errors="0" skipped="0" time="1.85">
+        <testcase classname="com.runlens.Payments" name="test_stripe_webhook" time="0.95" />
+        <testcase classname="com.runlens.Payments" name="test_charge_idempotency" time="0.90" />
+    </testsuite>
+    <testsuite name="SearchSuite" tests="2" failures="0" errors="0" skipped="1" time="1.20">
+        <testcase classname="com.runlens.Search" name="test_query_indexing" time="0.55" />
+        <testcase classname="com.runlens.Search" name="test_fuzzy_match" time="0.65">
+            <skipped message="Elasticsearch mock warming up in staging" />
+        </testcase>
+    </testsuite>
+</testsuites>

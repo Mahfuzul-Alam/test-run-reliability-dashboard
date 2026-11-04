@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="RunLens-Build-102" time="4.35">
+    <testsuite name="AuthSuite" tests="2" failures="0" errors="0" skipped="0" time="1.05">
+        <testcase classname="com.runlens.Auth" name="test_login_credentials" time="0.40" />
+        <testcase classname="com.runlens.Auth" name="test_session_expiry" time="0.65" />
+    </testsuite>
+    <testsuite name="PaymentSuite" tests="2" failures="1" errors="0" skipped="0" time="2.10">
+        <testcase classname="com.runlens.Payments" name="test_stripe_webhook" time="0.92" />
+        <testcase classname="com.runlens.Payments" name="test_charge_idempotency" time="1.18">
+            <failure message="Idempotency key collision on rapid retry" type="AssertionError">Expected 200 with cached intent, but received 409 Conflict.</failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="SearchSuite" tests="2" failures="0" errors="0" skipped="0" time="1.20">
+        <testcase classname="com.runlens.Search" name="test_query_indexing" time="0.58" />
+        <testcase classname="com.runlens.Search" name="test_fuzzy_match" time="0.62" />
+    </testsuite>
+</testsuites>
