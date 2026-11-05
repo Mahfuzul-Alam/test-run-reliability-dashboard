@@ -33,6 +33,18 @@ app.add_middleware(
 )
 
 
+@app.get("/", tags=["System"])
+async def root():
+    """Root info endpoint."""
+    return {
+        "service": "RunLens API",
+        "version": "1.0.0",
+        "docs": "/docs",
+        "health": "/health",
+        "analyze": "/api/v1/analyze",
+    }
+
+
 @app.get("/health", tags=["System"])
 async def health_check():
     """Returns basic service health status."""
