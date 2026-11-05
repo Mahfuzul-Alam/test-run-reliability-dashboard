@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ apiStatus, onRetryHealth }) => {
 
           {/* GitHub Link */}
           <a
-            href="https://github.com/mahfuzshanto/test-run-reliability-dashboard"
+            href="https://github.com/Mahfuzul-Alam/test-run-reliability-dashboard"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View source repository on GitHub"

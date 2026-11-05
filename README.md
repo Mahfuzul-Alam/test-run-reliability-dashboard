@@ -172,7 +172,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ### Backend (`backend/.env` or Render Service Settings)
 | Variable | Description | Example / Default |
 |---|---|---|
-| `CORS_ORIGINS` | Comma-separated list of allowed frontend origins | `http://localhost:3000,http://127.0.0.1:3000,https://mahfuzshanto.github.io` |
+| `CORS_ORIGINS` | Comma-separated list of allowed frontend origins | `http://localhost:3000,http://127.0.0.1:3000,https://mahfuzul-alam.github.io` |
 | `PORT` | Port bound by host / container | `8000` (local) or injected by Render (`$PORT`) |
 
 *Note: No passwords, tokens, or external API secrets are required for running RunLens.*

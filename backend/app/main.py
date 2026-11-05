@@ -18,7 +18,7 @@ app = FastAPI(
 # CORS setup: strict allowed origins from env
 raw_origins = os.getenv(
     "CORS_ORIGINS",
-    "http://localhost:3000,http://127.0.0.1:3000,https://mahfuzshanto.github.io",
+    "http://localhost:3000,http://127.0.0.1:3000,https://mahfuzul-alam.github.io,https://mahfuzshanto.github.io",
 )
 allowed_origins: List[str] = [
     origin.strip() for origin in raw_origins.split(",") if origin.strip()
